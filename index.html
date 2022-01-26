@@ -3596,6 +3596,7 @@
           padding-left: 10px;
         "
       >
+        <button class="mobiline-info-button" type="button" style="display: none;">Вернутья в каталог</button>
         <div class="mobiline-info not-mix" style="display: none">
           Нет подходящего микса
         </div>
@@ -5911,21 +5912,31 @@
     </div>
 
     <div
-      class="mix-mobihel-info"
+      class="mix-mobiline-info"
       style="
         min-width: 235px;
         min-height: 100px;
         background-color: #cacaca;
         border: 1px dashed #424242;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: ;
         padding: 10px;
         margin: 10px;
+        row-gap: 10px;
       "
     >
-      Карта микса(в разработке)
+      <span class="info-span" style="display: none;">Карта микса</span>
+      <div class="mix-mobiline-info-name" style="min-height: 90px; background-color: red;">
+        <h3>Микс: <span class="mobiline-name"></span></h3>
+        <p>Тип: <span class="mobiline-type"></span></p>
+        <p>Цвет: <span class="mobiline-color"></span></p>
+      </div>
+      <div class="mix-mobiline-info-name" style="height: 90px; background-color: red;">
+      </div>
+      <div class="mix-mobiline-info-name" style="height: 90px; background-color: red;">
+      </div>
     </div>
 
     <script type="text/javascript">
@@ -5941,8 +5952,40 @@
       let notMix = document.querySelector(".not-mix");
       let nulls = document.querySelector(".nulls");
       let infoBlock = document.querySelector(".info-block");
+      let mobilineInfoButton = document.querySelector(".mobiline-info-button");
+      let infoSpan = document.querySelector(".info-span");
+      let mixMobilineInfo = document.querySelector(".mix-mobiline-info");
+      let mixMobilineInfoName = document.querySelectorAll(".mix-mobiline-info-name");
+
+      if (window.outerWidth > 800) {
+          mixMobilineInfo.style.flexDirection = "row";
+          for (let mixMobilineInfoNames of mixMobilineInfoName) {
+            mixMobilineInfoNames.style.width = "33%";
+          }
+        } else {
+          mixMobilineInfo.style.flexDirection = "column";
+          for (let mixMobilineInfoNames of mixMobilineInfoName) {
+            mixMobilineInfoNames.style.width = "100%";
+          }
+        }
+
+      window.onresize = function () {
+        if (window.outerWidth > 800) {
+          mixMobilineInfo.style.flexDirection = "row";
+          for (let mixMobilineInfoNames of mixMobilineInfoName) {
+            mixMobilineInfoNames.style.width = "33%";
+          }
+        } else {
+          mixMobilineInfo.style.flexDirection = "column";
+          for (let mixMobilineInfoNames of mixMobilineInfoName) {
+            mixMobilineInfoNames.style.width = "100%";
+          }
+        }
+      }
 
       typeSelect.onchange = function () {
+        infoSpan.style.display = "inline-block";
+        mobilineInfoButton.style.display = "none";
         for (let selects of select) {
           selects.selectedIndex = 0;
           selects.disabled = true;
@@ -5971,11 +6014,36 @@
             mobilineInfos.style.boxShadow = "2px 2px 5px black";
             mobilineInfos.style.padding = "5px";
             mobilineInfos.style.backgroundColor = "#f0f0f0";
+
+            mobilineInfos.onclick = function () {
+              if (typeSelect.value == 0) {
+              for (let mobilineInfoss of mobilineInfo) {
+            mobilineInfoss.style.display = "none";
           }
+          mobilineInfos.style.display = "inline-block";
+          mobilineInfoButton.style.display = "inline-block";
+          infoBlock.style.display = "inline-block";
+          infoBlock.style.width = "auto";
+          infoBlock.style.border = "none";
+          infoBlock.style.paddingLeft = "0";
+        }
+      }
+        }
+          
           notMix.style.display = "none";
           nulls.style.display = "none";
         } else {
-          /* Закончить сдесь обнулив все стили что данны в данном if */
+          mobilineInfoButton.style.display = "none";
+          infoBlock.style.display = "inline-block";
+          infoBlock.style.width = "auto";
+          infoBlock.style.border = "none";
+          infoBlock.style.paddingLeft = "0";
+          for (let mobilineInfos of mobilineInfo) {
+            mobilineInfos.style.display = "none";
+            mobilineInfos.style.boxShadow = "2px 2px 5px black";
+            mobilineInfos.style.padding = "5px";
+            mobilineInfos.style.backgroundColor = "#f0f0f0";
+          }
         }
 
         if (typeSelect.value == 1) {
@@ -5986,6 +6054,7 @@
       };
 
       brend.onchange = function () {
+        infoSpan.style.display = "inline-block";
         for (let selects of select) {
           selects.selectedIndex = 0;
           mixSelect.style.backgroundColor = "#cacaca";
@@ -6019,13 +6088,53 @@
             "inline-block";
           if (selects.value === "not-mix") {
             mixSelect.style.backgroundColor = "#ff919c";
+            infoSpan.style.display = "inline-block";
           } else if (selects.value === "nulls") {
             mixSelect.style.backgroundColor = "#cacaca";
+            infoSpan.style.display = "inline-block";
           } else {
             mixSelect.style.backgroundColor = "#75ff6b";
+            infoSpan.style.display = "none";
           }
         };
       }
+
+      mobilineInfoButton.onclick = function () {
+        typeSelect.selectedIndex = 1;
+        mobilineInfoButton.style.display = "none";
+        for (let selects of select) {
+          selects.selectedIndex = 0;
+          selects.disabled = true;
+          mixSelect.style.backgroundColor = "#cacaca";
+        }
+
+        for (let mobilineInfos of mobilineInfo) {
+          mobilineInfos.style.display = "none";
+        }
+
+        brend.selectedIndex = 0;
+        brendLabel.style.display = "none";
+        brend.disabled = true;
+        brendsListSelect.style.display = "none";
+
+        if (typeSelect.value == 0) {
+          infoBlock.style.display = "grid";
+          infoBlock.style.gap = "20px";
+          infoBlock.style.gridTemplateColumns =
+            "repeat(auto-fit, minmax(200px,1fr))";
+          infoBlock.style.width = "100%";
+          infoBlock.style.border = "none";
+          infoBlock.style.paddingLeft = "0";
+          for (let mobilineInfos of mobilineInfo) {
+            mobilineInfos.style.display = "inline-block";
+            mobilineInfos.style.boxShadow = "2px 2px 5px black";
+            mobilineInfos.style.padding = "5px";
+            mobilineInfos.style.backgroundColor = "#f0f0f0";
+            notMix.style.display = "none";
+            nulls.style.display = "none";
+          }
+      }
+    }
     </script>
   </body>
 </html>
