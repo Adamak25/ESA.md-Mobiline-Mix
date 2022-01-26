@@ -35,7 +35,7 @@
           >Тип подбора
           <select name="type-select" class="type-select" id="type-select">
             <option value="nulls"></option>
-            <option value="0" disabled>Каталог MOBILINE</option>
+            <option value="0">Каталог MOBILINE</option>
             <option value="1">По другому бренду</option>
             <option value="2" disabled>По таблицам RAL</option>
           </select>
@@ -2542,7 +2542,6 @@
             <option value="not-mix">12L</option>
             <option value="not-mix">35L</option>
           </select>
-
         </label>
       </form>
       <div
@@ -2555,6 +2554,7 @@
           padding-left: 10px;
         "
       >
+        <button class="mobiline-info-button" type="button" style="display: none;">Вернутья в каталог</button>
         <div class="mobiline-info not-mix" style="display: none">
           Нет подходящего микса
         </div>
@@ -2573,25 +2573,28 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Кисель (биндер)</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
+                border: 2px solid white;
                 background-color: rgba(0, 0, 0, 0.2);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
               Прозрачный
             </div>
           </div>
-          Mobiline Binder-met 110
+          <span style="font-size: 18px">Mobiline Binder-met 110</span>
         </div>
         <div class="mobiline-info m160" style="display: none">
           <div
@@ -2604,19 +2607,22 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
               >Флоп добавка</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
+                border: 2px solid white;
                 background-color: rgba(0, 0, 0, 0.2);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
               Прозрачный
@@ -2635,19 +2641,22 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
               >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
+                border: 2px solid white;
                 background-color: rgb(255, 255, 255);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             ></div>
           </div>
@@ -2664,19 +2673,22 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
               >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
+                border: 2px solid white;
                 background-color: rgb(255, 255, 255);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             ></div>
           </div>
@@ -2693,22 +2705,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Добавка</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgb(241, 241, 237);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              Иней
             </div>
           </div>
           Mobiline 342
@@ -2724,22 +2739,26 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(255, 255, 255, 0.2);
+                border: 2px solid white;
+                background-color: rgb(0, 0, 0);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
+                color: rgb(255, 255, 255);
               "
             >
-              Прозрачный
+              T
             </div>
           </div>
           Mobiline 325
@@ -2755,23 +2774,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgb(0, 0, 0);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
+                color: rgb(255, 255, 255);
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 327
         </div>
@@ -2786,22 +2807,32 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgb(0, 0, 0);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 0;
               "
             >
-              Прозрачный
+              <div
+                style="
+                  height: 100%;
+                  width: 50%;
+                  margin-left: auto;
+                  background-color: rgb(128, 0, 0);
+                "
+              ></div>
             </div>
           </div>
           Mobiline 368
@@ -2817,23 +2848,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgb(109, 64, 121);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 336
         </div>
@@ -2848,23 +2880,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgb(163, 67, 153);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 329
         </div>
@@ -2879,23 +2912,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(172, 64, 88, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 303
         </div>
@@ -2910,23 +2944,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(153, 0, 51, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 381
         </div>
@@ -2941,23 +2976,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(153, 0, 51, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 382
         </div>
@@ -2972,23 +3008,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(176, 64, 75, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 324
         </div>
@@ -3003,23 +3040,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(255, 0, 0, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 343
         </div>
@@ -3034,22 +3072,26 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(255, 0, 0, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
+                color: rgb(255, 255, 255);
               "
             >
-              Прозрачный
+              HP
             </div>
           </div>
           Mobiline 344
@@ -3065,23 +3107,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(146, 62, 52, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 306
         </div>
@@ -3096,23 +3139,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(142, 77, 40, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 330
         </div>
@@ -3127,23 +3171,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(142, 77, 40, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 331
         </div>
@@ -3158,23 +3203,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(213, 59, 25, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 335
         </div>
@@ -3189,23 +3235,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(200, 85, 18, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 323
         </div>
@@ -3220,23 +3267,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(197, 133, 37, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 333
         </div>
@@ -3251,23 +3299,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(206, 153, 64, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 305
         </div>
@@ -3282,23 +3331,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(188, 176, 75, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 332
         </div>
@@ -3313,22 +3363,26 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(255, 250, 62, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
+                color: rgb(0, 0, 0);
               "
             >
-              Прозрачный
+              T
             </div>
           </div>
           Mobiline 328
@@ -3344,23 +3398,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(164, 190, 73, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 378
         </div>
@@ -3375,23 +3430,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(147, 234, 0, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 322
         </div>
@@ -3406,23 +3462,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(2, 176, 72, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 338
         </div>
@@ -3437,23 +3494,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(2, 128, 138, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 353
         </div>
@@ -3468,23 +3526,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(3, 112, 148, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 354
         </div>
@@ -3499,23 +3558,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(3, 34, 180, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 355
         </div>
@@ -3530,23 +3590,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(64, 3, 188, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 347
         </div>
@@ -3561,23 +3622,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(77, 19, 196, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 352
         </div>
@@ -3592,22 +3654,26 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(95, 1, 139, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
+                color: rgb(255, 255, 255);
               "
             >
-              Прозрачный
+              T
             </div>
           </div>
           Mobiline 320
@@ -3623,23 +3689,24 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(95, 1, 139, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
-            >
-              Прозрачный
-            </div>
+            ></div>
           </div>
           Mobiline 356
         </div>
@@ -3654,22 +3721,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(216, 216, 216, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              S
             </div>
           </div>
           Mobiline 216
@@ -3685,22 +3755,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(216, 216, 216, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              S
             </div>
           </div>
           Mobiline 218
@@ -3716,22 +3789,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(216, 216, 216, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              S
             </div>
           </div>
           Mobiline 209
@@ -3747,22 +3823,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(216, 216, 216, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              S мелк.
             </div>
           </div>
           Mobiline 257
@@ -3778,22 +3857,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(216, 216, 216, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              S
             </div>
           </div>
           Mobiline 219
@@ -3809,22 +3891,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(216, 216, 216, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              S
             </div>
           </div>
           Mobiline 214
@@ -3840,22 +3925,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(216, 216, 216, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              S
             </div>
           </div>
           Mobiline 208
@@ -3871,22 +3959,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(216, 216, 216, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              S
             </div>
           </div>
           Mobiline 213
@@ -3902,22 +3993,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(216, 216, 216, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              S крупн.
             </div>
           </div>
           Mobiline 258
@@ -3933,22 +4027,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(216, 216, 216, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              S
             </div>
           </div>
           Mobiline 217
@@ -3964,22 +4061,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(216, 216, 216, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              S
             </div>
           </div>
           Mobiline 210
@@ -3995,22 +4095,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(239, 203, 58, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              Metallic
             </div>
           </div>
           Mobiline 279
@@ -4026,22 +4129,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Металлик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(253, 165, 0, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              Metallic
             </div>
           </div>
           Mobiline 276
@@ -4057,22 +4163,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Перламутр</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(245, 245, 245, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              P
             </div>
           </div>
           Mobiline 591
@@ -4088,22 +4197,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Перламутр</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(245, 245, 245, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              P
             </div>
           </div>
           Mobiline 580
@@ -4119,22 +4231,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Перламутр</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(245, 245, 245, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              P
             </div>
           </div>
           Mobiline 596
@@ -4150,22 +4265,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Перламутр</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(253, 196, 203, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              P
             </div>
           </div>
           Mobiline 599
@@ -4181,22 +4299,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Перламутр</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(254, 191, 160, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              P
             </div>
           </div>
           Mobiline 595
@@ -4212,22 +4333,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Перламутр</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(255, 200, 176, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              P
             </div>
           </div>
           Mobiline 594
@@ -4243,22 +4367,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Перламутр</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(254, 191, 160, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              P
             </div>
           </div>
           Mobiline 581
@@ -4274,22 +4401,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Перламутр</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(247, 215, 168, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              P
             </div>
           </div>
           Mobiline 574
@@ -4305,22 +4435,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Перламутр</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(251, 236, 153, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              P
             </div>
           </div>
           Mobiline 592
@@ -4336,22 +4469,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Перламутр</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(216, 237, 184, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              P
             </div>
           </div>
           Mobiline 582
@@ -4367,22 +4503,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Перламутр</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(204, 233, 234, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              P
             </div>
           </div>
           Mobiline 593
@@ -4398,22 +4537,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Перламутр</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(204, 233, 234, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              P
             </div>
           </div>
           Mobiline 571
@@ -4429,22 +4571,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Перламутр</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(204, 233, 234, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              P
             </div>
           </div>
           Mobiline 573
@@ -4460,22 +4605,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Перламутр</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(204, 233, 234, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              P
             </div>
           </div>
           Mobiline 587
@@ -4491,22 +4639,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Перламутр</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(227, 196, 226, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              P
             </div>
           </div>
           Mobiline 578
@@ -4522,22 +4673,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Ксиралик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(245, 245, 245, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              Xirallic
             </div>
           </div>
           Mobiline 600
@@ -4553,22 +4707,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Ксиралик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(253, 196, 203, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              Xirallic
             </div>
           </div>
           Mobiline 603
@@ -4584,22 +4741,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Ксиралик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(247, 215, 168, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              Xirallic
             </div>
           </div>
           Mobiline 602
@@ -4615,22 +4775,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Ксиралик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(251, 236, 153, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              Xirallic
             </div>
           </div>
           Mobiline 601
@@ -4646,22 +4809,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Ксиралик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(216, 237, 184, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              Xirallic
             </div>
           </div>
           Mobiline 605
@@ -4677,22 +4843,25 @@
             "
           >
             <span
+              class="mix-color-type"
               style="font-size: 16px; display: inline-block; font-weight: 500"
-              >Кисель(биндер)</span
+              >Ксиралик</span
             >
             <div
+              class="color-info"
               style="
                 margin-left: 5px;
                 width: 100%;
+                min-width: 60px;
                 height: 20px;
-                border: 2px solid black;
-                background-color: rgba(0, 0, 0, 0.2);
+                border: 2px solid white;
+                background-color: rgba(204, 233, 234, 1);
                 font-size: 10px;
                 text-align: center;
-                padding: 7px 10px 0 10px; ;
+                padding: 7px 10px 0 10px;
               "
             >
-              Прозрачный
+              Xirallic
             </div>
           </div>
           Mobiline 604
@@ -4701,33 +4870,79 @@
     </div>
 
     <div
-      class="mix-mobihel-info"
+      class="mix-mobiline-info"
       style="
         min-width: 235px;
         min-height: 100px;
         background-color: #cacaca;
         border: 1px dashed #424242;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
-        align-items: center;
         padding: 10px;
         margin: 10px;
+        row-gap: 10px;
       "
     >
-      Карта микса(в разработке)
+      <span class="info-span" style="display: none;">Карта микса</span>
+      <div class="mix-mobiline-info-name" style="min-height: 90px; background-color: red;">
+        <h3>Микс: <span class="mobiline-name"></span></h3>
+        <p>Тип: <span class="mobiline-type"></span></p>
+        <p>Цвет: <span class="mobiline-color"></span></p>
+      </div>
+      <div class="mix-mobiline-info-name" style="height: 90px; background-color: red;">
+      </div>
+      <div class="mix-mobiline-info-name" style="height: 90px; background-color: red;">
+      </div>
     </div>
 
     <script type="text/javascript">
       let brend = document.querySelector(".brend");
       let select = document.querySelectorAll(".select");
       let mobilineInfo = document.querySelectorAll(".mobiline-info");
+      let mixColorType = document.querySelectorAll(".mix-color-type");
+      let colorInfo = document.querySelectorAll(".color-info");
       let mixSelect = document.querySelector(".mix-select");
       let typeSelect = document.querySelector(".type-select");
       let brendLabel = document.querySelector(".brend-label");
       let brendsListSelect = document.querySelector(".brends-list-select");
+      let notMix = document.querySelector(".not-mix");
+      let nulls = document.querySelector(".nulls");
+      let infoBlock = document.querySelector(".info-block");
+      let mobilineInfoButton = document.querySelector(".mobiline-info-button");
+      let infoSpan = document.querySelector(".info-span");
+      let mixMobilineInfo = document.querySelector(".mix-mobiline-info");
+      let mixMobilineInfoName = document.querySelectorAll(".mix-mobiline-info-name");
+
+      if (window.outerWidth > 800) {
+          mixMobilineInfo.style.flexDirection = "row";
+          for (let mixMobilineInfoNames of mixMobilineInfoName) {
+            mixMobilineInfoNames.style.width = "33%";
+          }
+        } else {
+          mixMobilineInfo.style.flexDirection = "column";
+          for (let mixMobilineInfoNames of mixMobilineInfoName) {
+            mixMobilineInfoNames.style.width = "100%";
+          }
+        }
+
+      window.onresize = function () {
+        if (window.outerWidth > 800) {
+          mixMobilineInfo.style.flexDirection = "row";
+          for (let mixMobilineInfoNames of mixMobilineInfoName) {
+            mixMobilineInfoNames.style.width = "33%";
+          }
+        } else {
+          mixMobilineInfo.style.flexDirection = "column";
+          for (let mixMobilineInfoNames of mixMobilineInfoName) {
+            mixMobilineInfoNames.style.width = "100%";
+          }
+        }
+      };
 
       typeSelect.onchange = function () {
+        infoSpan.style.display = "inline-block";
+        mobilineInfoButton.style.display = "none";
         for (let selects of select) {
           selects.selectedIndex = 0;
           selects.disabled = true;
@@ -4743,6 +4958,51 @@
         brend.disabled = true;
         brendsListSelect.style.display = "none";
 
+        if (typeSelect.value == 0) {
+          infoBlock.style.display = "grid";
+          infoBlock.style.gap = "20px";
+          infoBlock.style.gridTemplateColumns =
+            "repeat(auto-fit, minmax(200px,1fr))";
+          infoBlock.style.width = "100%";
+          infoBlock.style.border = "none";
+          infoBlock.style.paddingLeft = "0";
+          for (let mobilineInfos of mobilineInfo) {
+            mobilineInfos.style.display = "inline-block";
+            mobilineInfos.style.boxShadow = "2px 2px 5px black";
+            mobilineInfos.style.padding = "5px";
+            mobilineInfos.style.backgroundColor = "#f0f0f0";
+
+            mobilineInfos.onclick = function () {
+              if (typeSelect.value == 0) {
+              for (let mobilineInfoss of mobilineInfo) {
+            mobilineInfoss.style.display = "none";
+          }
+          mobilineInfos.style.display = "inline-block";
+          mobilineInfoButton.style.display = "inline-block";
+          infoBlock.style.display = "inline-block";
+          infoBlock.style.width = "auto";
+          infoBlock.style.border = "none";
+          infoBlock.style.paddingLeft = "0";
+        }
+      }
+        }
+
+          notMix.style.display = "none";
+          nulls.style.display = "none";
+        } else {
+          mobilineInfoButton.style.display = "none";
+          infoBlock.style.display = "inline-block";
+          infoBlock.style.width = "auto";
+          infoBlock.style.border = "none";
+          infoBlock.style.paddingLeft = "0";
+          for (let mobilineInfos of mobilineInfo) {
+            mobilineInfos.style.display = "none";
+            mobilineInfos.style.boxShadow = "2px 2px 5px black";
+            mobilineInfos.style.padding = "5px";
+            mobilineInfos.style.backgroundColor = "#f0f0f0";
+          }
+        }
+
         if (typeSelect.value == 1) {
           brendLabel.style.display = "inline-block";
           brend.disabled = false;
@@ -4751,6 +5011,7 @@
       };
 
       brend.onchange = function () {
+        infoSpan.style.display = "inline-block";
         for (let selects of select) {
           selects.selectedIndex = 0;
           mixSelect.style.backgroundColor = "#cacaca";
@@ -4784,13 +5045,54 @@
             "inline-block";
           if (selects.value === "not-mix") {
             mixSelect.style.backgroundColor = "#ff919c";
+            infoSpan.style.display = "inline-block";
           } else if (selects.value === "nulls") {
             mixSelect.style.backgroundColor = "#cacaca";
+            infoSpan.style.display = "inline-block";
           } else {
             mixSelect.style.backgroundColor = "#75ff6b";
+            infoSpan.style.display = "none";
           }
         };
       }
+
+      mobilineInfoButton.onclick = function () {
+        typeSelect.selectedIndex = 1;
+        mobilineInfoButton.style.display = "none";
+        for (let selects of select) {
+          selects.selectedIndex = 0;
+          selects.disabled = true;
+          mixSelect.style.backgroundColor = "#cacaca";
+        }
+
+        for (let mobilineInfos of mobilineInfo) {
+          mobilineInfos.style.display = "none";
+        }
+
+        brend.selectedIndex = 0;
+        brendLabel.style.display = "none";
+        brend.disabled = true;
+        brendsListSelect.style.display = "none";
+
+        if (typeSelect.value == 0) {
+          infoBlock.style.display = "grid";
+          infoBlock.style.gap = "20px";
+          infoBlock.style.gridTemplateColumns =
+            "repeat(auto-fit, minmax(200px,1fr))";
+          infoBlock.style.width = "100%";
+          infoBlock.style.border = "none";
+          infoBlock.style.paddingLeft = "0";
+          for (let mobilineInfos of mobilineInfo) {
+            mobilineInfos.style.display = "inline-block";
+            mobilineInfos.style.boxShadow = "2px 2px 5px black";
+            mobilineInfos.style.padding = "5px";
+            mobilineInfos.style.backgroundColor = "#f0f0f0";
+            notMix.style.display = "none";
+            nulls.style.display = "none";
+          }
+        };
+      }
+
     </script>
   </body>
 </html>
